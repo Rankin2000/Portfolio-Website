@@ -1,5 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-<h1> Stuart Rankin </h1>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Stuart Rankin</a>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="www.stuartrankin.uk">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="www.stuartrankin.uk/projects">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="www.stuartrankin.uk/blog">
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron text-right" style="margin-bottom:0">
+	<h1> Stuart Rankin </h1>
+	<h2> 4th Year Ethical Hacking </h2>
+	<div class="text-left">
+		<h3>github.com/Rankin2000</h3>
+		<a href="https://www.twitter.com/stuartrankin54">@stuartrankin54</a>
+	</div>
+</div>
 {% endblock %}
