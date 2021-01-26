@@ -1,8 +1,7 @@
 {% extends "base.html" %}
-{% load static %}
 {% block page_content %}
 <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a class="navbar-brand" href="./">Stuart Rankin</a>
+    <!--<a class="navbar-brand" href="./">Stuart Rankin</a>-->
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
@@ -22,15 +21,24 @@
                 </a>
             </li>
         </ul>
+        <ul class="navbar-nav ml-auto navbar-right">
+            <li>
+                <a class="mx-1" href="https://www.github.com/Rankin2000"><i class="mx-1 fa fa-github"></i>GitHub</a>
+            </li>
+            <li>
+                <a class="mx-1" href="https://www.twitter.com/stuartrankin54"><i class="mx-1 fa fa-twitter"></i>Twitter</a>
+            </li>
+            <li>
+                <a class="mx-1" href="https://www.lindkedin.com/in/stuart-rankin-7961321b5"><i class="mx-1 fa fa-linkedin"></i>Linkedin</a>
+            </li>
+        </ul>
     </div>
 </nav>
-<div class="jumbotron text-right" style="margin-bottom:0">
-	<h1> Stuart Rankin </h1>
-	<h2> 4th Year Ethical Hacking </h2>
-	<div class="text-left">
-                <a href="https://www.github.com/Rankin2000">github</a>
-                <br>
-		<a href="https://www.twitter.com/stuartrankin54">@stuartrankin54</a>
-	</div>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <h1 class="cover-heading">Stuart Rankin</h1>
+    <h2>4th Year Student</h2>
+{% load static %}
+    <img src="{% static 'portfolio/bird.jpg' %}" class="rounded-circle">
+    <p class="lead">Lorem Ipsum....</p>
 </div>
 {% endblock %}
