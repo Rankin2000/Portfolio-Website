@@ -5,4 +5,4 @@ class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     module = models.CharField(max_length=6)
-
+    file = models.FileField(upload_to='uploads/')
