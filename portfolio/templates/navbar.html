@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item" {% if request.path == home %}class="active"{% endif %}>
+            <li class="nav-item {% if request.path == '/' %} active{% endif %}">
                 <a class="nav-link" href="/">
                     Home
                 </a>
             </li>
-            <li class="nav-item" {% if request.path == projects %}class="active"{% endif %}>
+            <li class="nav-item {% if request.path == '/projects/' %} active{% endif %}">
                 <a class="nav-link" href="/projects">
                     Projects
                 </a>
             </li>
-            <li class="nav-item" {% if request.path == blog %}class="active"{% endif %}>
+            <li class="nav-item {% if request.path == '/blog/' %} active{% endif %}">
                 <a class="nav-link" href="/blog">
                     Blog
                 </a>
