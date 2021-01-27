@@ -1,44 +1,12 @@
 {% extends "base.html" %}
 {% block page_content %}
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <!--<a class="navbar-brand" href="./">Stuart Rankin</a>-->
-
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="./">
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./projects">
-                    Projects
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./blog">
-                    Blog
-                </a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto navbar-right">
-            <li>
-                <a class="mx-1" href="https://www.github.com/Rankin2000"><i class="mx-1 fa fa-github"></i>GitHub</a>
-            </li>
-            <li>
-                <a class="mx-1" href="https://www.twitter.com/stuartrankin54"><i class="mx-1 fa fa-twitter"></i>Twitter</a>
-            </li>
-            <li>
-                <a class="mx-1" href="https://www.lindkedin.com/in/stuart-rankin-7961321b5"><i class="mx-1 fa fa-linkedin"></i>Linkedin</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column text-center">
     <h1 class="cover-heading">Stuart Rankin</h1>
     <h2>4th Year Student</h2>
 {% load static %}
     <img src="{% static 'portfolio/bird.jpg' %}" class="rounded-circle">
-    <p class="lead">Lorem Ipsum....</p>
+    <h2>About Me</h2>
+    <p class="lead">I am Stuart Rankin, a 4th year Ethical Hacking student at Abertay University. Here you will find some posts on the projects I've worked on either in my free time or as part of various University modules. </p>
+    <p>Please note that this site is a work in progress.</p>
 </div>
 {% endblock %}
