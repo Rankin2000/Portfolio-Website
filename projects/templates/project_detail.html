@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_content %}
 <h1>{{ project.title }}</h1>
 <div class="row">
@@ -13,6 +12,7 @@
         <p>{{ project.module }}</p>
     </div>
 </div>
-        <object data="{% static "example.pdf" %}" alt="{{ project.title }}" width="100%" height="100%">
-        </object>
+{{ project.file.url }}
+<object data="{{ project.file.url }}" alt="{{ project.title }}" width="100%" height="100%">
+</object>
 {% endblock %}
