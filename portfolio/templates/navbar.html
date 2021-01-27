@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" {% if request.path == home %}class="active"{% endif %}>
+                <a class="nav-link" href="/">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item" {% if request.path == projects %}class="active"{% endif %}>
+                <a class="nav-link" href="/projects">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item" {% if request.path == blog %}class="active"{% endif %}>
+                <a class="nav-link" href="/blog">
+                    Blog
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto navbar-right">
+            <li>
+                <a class="mx-1" href="https://www.github.com/Rankin2000"><i class="mx-1 fa fa-github"></i>GitHub</a>
+            </li>
+            <li>
+                <a class="mx-1" href="https://www.twitter.com/stuartrankin54"><i class="mx-1 fa fa-twitter"></i>Twitter</a>
+            </li>
+            <li>
+                <a class="mx-1" href="https://www.linkedin.com/stuart-rankin-7961321b5"><i class="mx-1 fa fa-linkedin"></i>Linkedin</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
